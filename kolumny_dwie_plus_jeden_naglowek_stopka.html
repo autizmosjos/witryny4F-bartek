@@ -17,13 +17,16 @@
             padding: 10px;
             height: 200px;  
         }
-        .row:after{
+        .main:after{
             content: "";
             display: table;
             clear: both;
         }
         @media screen and (max-width: 600px){
             .column{
+                width: 100%;
+            }
+            .footer{
                 width: 100%;
             }
         }
@@ -48,7 +51,7 @@
     
 
 
-<div class="row">
+<main class="row">
     <div class="column" style="background-color:#aaa; width: 25%;">
     
     </div>
@@ -57,10 +60,10 @@
     </div>
     <div class="column" style="background-color:#ccc; width:25%;">
    
-    </div>
+    </main>
 
 </div>
-    <footer class="row" style="margin:0;height: 200px; background-color:#00FFFF;">
+    <footer class="row" style="padding-bottom:150px ;background-color:#00FFFF;">
 <h2>123</h2>        
         
  </footer>

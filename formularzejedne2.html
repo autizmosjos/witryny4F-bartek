@@ -7,14 +7,17 @@
     <title>formularz pe el</title>
 </head>
 <body>
-    <form action="formularzejedne.html">
+    <form action="formularzejedne.html" method="post">
         <fieldset>
-            <legend>Etykieta i małe pola tekstowe.</legend>
+            <legend>Etykieta i jednowierszowe pole.</legend>
             <label for="fname">Imie:</label><br>
-            <input type="text" id="fname" name="Imie" value=""><br>
+            <input type="text" id="fname" name="fname" ><br>
             <label for="lname">Nazwisko:</label><br>
-            <input type="text" id="lname" name="Nazwisko" value=""><br>
+            <input name="lname" id="lname" required type="text"><br>
+            <label for="pass">Hasło:</label><br>
+            <input required type="password" id="pass" name="pass"><br>
             <input type="submit" value="Wyślij">
+            
         </fieldset>
     </form>
 </body>

@@ -7,7 +7,7 @@
     <title>formularz pe el</title>
 </head>
 <body>
-    <form action="formularzejedne.html" method="post">
+    <form action="formularzejedne.html">
         <fieldset>
             <legend>Etykieta i jednowierszowe pole.</legend>
             <label for="fname">Imie:</label><br>
@@ -20,7 +20,7 @@
             
         </fieldset>
     </form>
-    <form action="">
+    <form action="formularzejedne.html">
         <fieldset>
             <legend>Duże pole tekstowe</legend>
             <label for="message">Wspaniała piosenka</label><br>
@@ -40,6 +40,104 @@
 
             </textarea></br>
                 <input type="submit" value="Wyślij">
+        </fieldset>
+        <form action="formularzejedne.html">
+            <fieldset>
+                <legend>radio button</legend><br>
+                <input type="radio" id="html"
+                name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS" checked>
+                <label for="css">css</label><br>
+                <input type="radio" id="java script" name="fav_language" value="Java Script">
+                <label fo="javascript">JavaScript</label><br>
+
+                <input type="submit" value="Wyślij">
+
+            </fieldset>
+        </form>
+    </form>
+
+    <form action="formularzejedne.html">
+        <fieldset>
+            <legend>CheckBox</legend><br>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="hulajnoga">
+            <label for="vehicle1">Mam hulajnoge</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="rower" checked>
+            <label for="vehicle2">Mam rower</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="samochód">
+            <label for="vehicle3">Mam samochód</label><br>
+            <input type="submit" value="Wyślij">
+        </fieldset>
+    </form>
+
+    <form action="formularzejedne.html">
+        <fieldset>
+            <legend>lista jednokrotengo wyboru</legend>
+            <label for="cars1">Wybierz ulubioną markę:<label><br>
+            <select name="cars1" name="cars1">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="alfa_romeo">Alfa Romeo</option>
+                <option value="bmw" disabled>BMW</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+                <option value="mercedes">Mercedes</option>
+            </select>
+
+            <input type="submit" value="Wyślij">
+
+        </fieldset>
+    </form>
+
+    <form action="formularzejedne.html">
+        <fieldset>
+            <legend>lista jednokrotengo wyboru</legend>
+            <label for="cars2">Wybierz ulubioną markę:<label><br>
+            <select name="cars2" name="cars2">
+                <optgroup label="auta szwedzkie">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                </optgroup>
+                <optgroup label="auta niemieckie">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                    <option value="bmw" disabled>BMW</option>
+                </optgroup>
+                <optgroup label="auta włoskie">
+                    <option value="alfa_romeo">Alfa Romeo</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="ferrari">Ferrari</option>
+                    <option value="lancia">Lancia</option>
+                    <option value="maserati">Maserati</option>
+                    
+                </optgroup>
+            </select><br/>
+
+            <input type="submit" value="Wyślij">
+
+        </fieldset>
+
+
+    </form>
+
+
+    <form action="formularzejedne.html">
+        <fieldset>
+            <legend>lista wielkrotnego wyboru</legend>
+            <label for="cars3">Wybierz ulubione marki:<label><br>
+            <select name="cars3" name="cars3" size="10" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab" selected>Saab</option>
+                <option value="alfa_romeo">Alfa Romeo</option>
+                <option value="bmw" disabled>BMW</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+                <option value="mercedes">Mercedes</option>
+            </select>
+
+            <input type="submit" value="Wyślij">
+
         </fieldset>
     </form>
 </body>

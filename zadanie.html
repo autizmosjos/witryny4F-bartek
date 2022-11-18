@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadanko</title>
+</head>
+<body>
+    <form action="formularzejedne.html">
+        <fieldset>
+            <legend>Etykieta i jednowierszowe pole.</legend>
+            <label for="fname">Imie:</label><br>
+            <input type="text" id="fname" name="fname" required type="text"><br>
+            <label for="sname">Drugie Imie:</label><br>
+            <input type="text" id="sname" name="sname"><br>
+            <label for="lname">Nazwisko:</label><br>
+            <input name="lname" id="lname" required type="text"><br>
+            <label for="dataur">Data urodzenia:</label><br>
+            <input type="date" name="dataur" required type="" min="1900-01-01" max="2022-11-18" /><br>
+            <label for="miejsce">Miejsce urodzenia:</label><br>
+            <input type="text" name="miejsce" required type=""><br>
+            <label for="wojewodztwo">wojewodztwo urodzenia:</label><br>
+            <select name="wojewodztwo" id="wojewodztwo" required><br>
+                <option style="display:none"></option>
+                <option value="dolnośląskie">dolnośląskie</option>
+                <option value="kujawsko-pomorskie">kujawsko-pomorskie</option>
+                <option value="lubelskie">lubelskie</option>
+                <option value="lubuskie">lubuskie</option>
+                <option value="łódzkie">łódzkie</option>
+                <option value="mazowieckie">mazowieckie</option>
+                <option value="opolskie">opolskie</option>
+                <option value="podkarpackie">podkarpackie</option>
+                <option value="podlaskie">podlaskie</option>
+                <option value="pomorskie">pomorskie</option>
+                <option value="śląskie">śląskie</option>
+                <option value="świętokrzyskie">świętokrzyskie</option>
+                <option value="warmińsko-mazurskie">warmińsko-mazurskie</option>
+                <option value="wielkopolskie">wielkopolskie</option>
+                <option value="zachodniopomorskie">zachodniopomorskie</option>
+
+
+
+            </select><br>
+            <input type="submit" value="Wyślij">
+
+        </fieldset>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nig</title>
+    <style>
+         * {
+            box-sizing: border-box;
+         }
+         .column1{
+            width: 20%;
+            float: left;
+            background-color: aquamarine;
+            text-align: center;
+         }
+         .column2{
+            width: 60%;
+            float: left;
+            background-color: aqua;
+            text-align: center;
+
+         }
+         .column3{
+            width: 20%;
+            float: left;
+            background-color: greenyellow;
+            text-align: center;
+
+         }
+       
+         .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            width: 100%;
+            text-align: center;
+            background-color: yellow;
+        }
+        header{
+            width: 100%;
+            background-color: gray;
+            text-align: center;
+        }
+        @media screen and (max-width: 600px){
+            .column1{
+                width: 100%;
+            }
+            .column2{
+                width: 100%;
+            }
+            .column3{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h6>nig</h6>
+        <picture>
+            <source media="(min-width: 800px)" srcset="golce920.jpg">
+            <source media="(min-width: 600px)" srcset="golce700.jpg">
+            <source media="(min-width: 450px)" srcset="golce500.jpg">
+            <source media="(min-width: 0px, max-width:449px)" srcset="golce400.jpg">
+            <img alt="" src="golce920.jpg">
+        </picture>
+    </header>
+
+    <div class="row">
+        <section class="column1">
+            <h6>nig</h6>
+            <form action="formularzejedne.html">
+            <fieldset style="border: 2px solid blue;">
+                <legend>nig:</legend>
+                <label for="login">login:</label>
+                <input type="text" id="login" name="login"><br><br>
+                <label for="haslo">haslo:</label>
+                <input type="text" id="haslo" name="haslo"><br><br>
+                <label for="haslo">Zapamiętaj hasło</label>
+                <input type="checkbox" id="haslo"><br><br>
+                <input type="submit" value="zaloguj" style="width: 100%; background-color: greenyellow;">
+            </fieldset>
+        </form>
+        </section>
+
+
+        <section class="column2">
+            <h6>nig</h6>
+        </section>
+
+        <section class="column3">
+            <h6>nig</h6>
+            <fieldset style="border: 1px solid red;">
+            <input type="text" id="szukaj">
+            <input type="submit" value="Szukaj" id="wyslij" style="background-color:cyan;">
+            </fieldset>
+        </section>
+    </div>
+
+    <footer>
+        <h6>nig</h6>
+    </footer>
+
+
+</body>
+</html>
